@@ -1,0 +1,33 @@
+.bg-main{
+    background-color: #0b0e14;
+}
+.bg-second{
+    background-color:  #f8e6de;
+}
+.bg-third{
+    background-color:  #ed500a;
+}
+.text-main{
+    color: #ed500a;
+}
+.text-second{
+    color: #f8e6de;
+}
+.btn-third{
+    background-color: #ed500a;
+    color: #f8e6de;
+}
+.btn-third:hover{
+    background-color: #c43f09;
+    color: #f8e6de;
+}
+.btn-third:active {
+    background-color: #ed500a !important; 
+    color: #f8e6de !important;
+    box-shadow: none !important;  
+    outline: none !important; 
+}
+
+.btn-third:focus {
+    box-shadow: none !important;  
+}
