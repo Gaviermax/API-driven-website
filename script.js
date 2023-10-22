@@ -16,11 +16,26 @@ let joke ="";
 //     .catch(error => console.log('error', error));
 
 
-  
-  fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+document.querySelector("#makeJoke").addEventListener("click", ()=>{
+    fetch("https://v2.jokeapi.dev/joke/Any?type=single")
     .then(response => response.json())
-    .then(result => console.log(result.joke))
+    .then(result => 
+        {
+            joke = result.joke;
+            document.querySelector("#jokeArea").innerHTML = 
+            `
+                <h4><em>${joke}</em></h4>
+            `
+        })
     .catch(error => console.log('error', error));
+})
+
+
+  
+//   fetch("https://v2.jokeapi.dev/joke/Any?type=single")
+//     .then(response => response.json())
+//     .then(result => console.log(result.joke))
+//     .catch(error => console.log('error', error));
 
 
     
